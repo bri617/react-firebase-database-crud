@@ -1,0 +1,178 @@
+.levelsSection {
+  width: 100%;
+  max-width: 744px;
+  margin-top: 40px;
+}
+
+.levelsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.levelsTitle {
+  color: #2b2b2b;
+  font-family:
+    Chivo,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.headerIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.levelsContent {
+  display: flex;
+  gap: 24px;
+}
+
+.energyCard,
+.totalEnergyCard {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 21px 19px;
+  width: 360px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 33px;
+}
+
+.cardIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.cardTitle {
+  color: #505050;
+  font-size: 21px;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.periodSelector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #1d1d1d;
+  font-size: 16px;
+}
+
+.selectorIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.graphImage {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+.graphDividers {
+  display: flex;
+  justify-content: space-between;
+  margin: -49px 16px 0;
+}
+
+.divider {
+  width: 1px;
+  height: 60px;
+  background-color: #2396ef;
+  opacity: 0.5;
+}
+
+.timeLabels {
+  display: flex;
+  justify-content: space-between;
+  color: #454444;
+  font-size: 13px;
+  margin-top: 68px;
+  padding: 0 16px;
+}
+
+.weeklyGraph {
+  margin-top: 20px;
+  position: relative;
+}
+
+.graphBars {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  padding: 0 20px;
+}
+
+.bar {
+  width: 24px;
+  background-color: #e8f3fc;
+  border-radius: 4px;
+}
+
+.activeBar {
+  position: relative;
+  width: 24px;
+}
+
+.energyValue {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2396ef;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.barIndicator {
+  width: 24px;
+  height: 24px;
+  background-color: #2396ef;
+  border-radius: 4px;
+}
+
+.weekDays {
+  display: flex;
+  justify-content: space-between;
+  color: #454444;
+  font-size: 14px;
+  margin-top: 13px;
+  padding: 0 20px;
+}
+
+@media (width <= 991px) {
+  .levelsSection {
+    max-width: 100%;
+  }
+
+  .levelsContent {
+    flex-direction: column;
+  }
+
+  .energyCard,
+  .totalEnergyCard {
+    width: 100%;
+  }
+
+  .timeLabels {
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+}

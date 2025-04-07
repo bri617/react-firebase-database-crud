@@ -10,6 +10,7 @@ import Profile from './pages/Profile';
 import Rooms from './pages/Rooms';
 import Devices from './pages/Devices';
 import History from './pages/History';
+import LevelsSection from './components/LevelsSection';
 
 function App() {
   return (

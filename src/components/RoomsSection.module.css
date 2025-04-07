@@ -1,0 +1,114 @@
+.roomsSection {
+  width: 100%;
+  max-width: 744px;
+}
+
+.roomsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.roomsTitle {
+  color: #2b2b2b;
+  font-family:
+    Chivo,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.searchContainer {
+  width: 438px;
+}
+
+.searchBar {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.searchIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+.roomsGrid {
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+
+.roomCard {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 168px;
+  height: 170px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.roomIcon {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.roomName {
+  position: absolute;
+  bottom: 39px;
+  left: 20px;
+  margin: 0;
+  font-size: 20px;
+  color: #1d1d1d;
+}
+
+.deviceCount {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  margin: 0;
+  font-size: 16px;
+  color: #6c7894;
+}
+
+.roomCard:first-child {
+  background-color: #2990f1;
+  .roomName,
+  .deviceCount {
+    color: #fff;
+  }
+}
+
+@media (width <= 991px) {
+  .roomsSection,
+  .searchContainer {
+    max-width: 100%;
+  }
+
+  .roomsGrid {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,77 @@
+.devicesSection {
+  width: 100%;
+  max-width: 744px;
+  margin-top: 40px;
+}
+
+.devicesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.devicesTitle {
+  color: #2b2b2b;
+  font-family:
+    Chivo,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.headerIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.devicesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.deviceCard {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px 17px;
+  width: 168px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.deviceCard.active {
+  background-color: #c3dbff;
+}
+
+.deviceStatus {
+  color: #5c5c5c;
+  font-size: 20px;
+}
+
+.deviceIcon {
+  width: 50px;
+  height: 50px;
+  margin: 28px 0 16px;
+  object-fit: contain;
+}
+
+.deviceName {
+  color: #284680;
+  font-size: 16px;
+  margin: 0;
+}
+
+@media (width <= 991px) {
+  .devicesSection {
+    max-width: 100%;
+  }
+
+  .devicesGrid {
+    justify-content: center;
+  }
+}

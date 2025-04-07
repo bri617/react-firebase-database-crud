@@ -1,0 +1,68 @@
+.sidebar {
+  width: 18%;
+  min-width: 250px;
+}
+
+.sidebarContent {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 52px 24px;
+  height: 862px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menuContainer {
+  color: #405d9f;
+  font-family:
+    Chivo,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+}
+
+.menuTitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.menuItems {
+  margin-top: 39px;
+  color: #6c7894;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  white-space: nowrap;
+}
+
+.menuIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.settingsTitle {
+  margin: 39px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.settingsItems {
+  color: #6c7894;
+}
+
+@media (width <= 991px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .menuItem {
+    white-space: initial;
+  }
+}
