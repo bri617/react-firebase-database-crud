@@ -1,20 +1,23 @@
-import React from 'react';
+import React from "react";
+import styles from "./InputDesign.module.css";
 
-const Rooms = () => {
-  const rooms = ['Living Room', 'Bedroom', 'Bathroom', 'Kitchen'];
+const RoomCard = ({ type, deviceCount, image, isActive }) => {
+  const roomNames = {
+    kitchen: "Kitchen",
+    livingRoom: "Living Room",
+    bedroom: "Bedroom",
+    bathroom: "Bathroom",
+  };
 
   return (
-    <section className="mb-6">
-      <h2 className="text-xl font-semibold mb-4">Rooms</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {rooms.map(room => (
-          <div key={room} className="bg-white rounded-xl shadow p-4 text-center">
-            {room}
-          </div>
-        ))}
-      </div>
-    </section>
+    <article
+      className={`${styles.roomCard} ${isActive ? styles.activeRoom : ""}`}
+    >
+      <img src={image} alt={roomNames[type]} className={styles.roomIcon} />
+      <h3 className={styles.roomName}>{roomNames[type]}</h3>
+      <p className={styles.deviceCount}>{deviceCount} Devices</p>
+    </article>
   );
 };
 
-export default Rooms;
+export default RoomCard;
